@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="/dist/output.css">
+    <link href="/dist/output.css" rel="stylesheet"> 
     <title>Box Model Float</title>
 </head>
 
 <body>
-    <div class="mx-auto bg-green-600 max-w-3xl container">
-        <header class="p-2 h-10 bg-red-300">
+    <div class="grid grid-cols-4  mx-auto bg-green-600 max-w-3xl container">
+        <header class="col-span-4 p-2 h-10 bg-red-300">
             Este es mi header
         </header>
-        <section class="flex flex-row-reverse bg-purple-400">
-            <nav class=" w-1/4 bg-blue-400">
-                Menú
-            </nav>
-            <article class=" w-3/4 bg-orange-400">
-                Contenido de la sección
-            </article>
-        </section>
-        <footer>
+        <!-- <section class="flex flex-row-reverse bg-purple-400"> -->
+        <nav class="h-32 bg-blue-400">
+            Menú
+        </nav>
+        <article class="col-span-3  bg-orange-400">
+            Contenido de la sección
+        </article>
+        <!-- </section> -->
+        <footer class="col-span-4 bg-red-500">
             Pie de página
         </footer>
     </div>
